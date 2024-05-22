@@ -1,0 +1,27 @@
+@import url("/src/components/colors.css");
+
+#experience {
+    color: var(--white);
+    
+  }
+#experience h3 {
+  font-size: 28px;
+  font-weight: 900;
+  word-spacing: 5px;
+  margin-bottom: 10px;
+}
+#experience p {
+  word-spacing: 5px;
+  line-height: 30px;
+}
+@media screen and (max-width: 717px) {
+  #experience{
+    text-align: center;
+  }
+  #experience h3 {
+    font-size: 21px;
+  }
+  #experience p {
+    font-size: 18px;
+  }
+}

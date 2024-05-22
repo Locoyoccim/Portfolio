@@ -1,0 +1,65 @@
+.main_container {
+  padding: 20px 200px;
+  position: relative;
+  overflow: hidden;
+}
+.sub_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: max-content;
+  margin-top: 100px;
+  gap: 80px;
+}
+.sub_tittles {
+  color: var(--Tittles);
+  text-decoration: underline;
+  letter-spacing: 3px;
+  font-size: 38px;
+  text-align: center;
+}
+.skills_list,
+.To_learn {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  column-gap: 110px;
+  row-gap: 50px;
+}
+.skills_list img,
+.To_learn img {
+  width: 120px;
+  transition: 0.5s all ease;
+}
+.experience_container {
+  background-color: var(--bg_article);
+  border: 5px solid var(--Tittles);
+  border-radius: 80px;
+  padding: 80px 20px;
+  display: grid;
+  row-gap: 50px;
+}
+@media screen and (max-width: 1025px) {
+  .main_container {
+    padding: 20px 50px;
+  }
+}
+@media screen and (max-width: 490px) {
+  .main_container {
+    padding: 20px 20px;
+  }
+}
+@media screen and (max-width: 385px) {
+  .skills_list img,
+  .To_learn img {
+    width: 100px;
+  }
+  .skills_list,
+  .To_learn {
+    column-gap: 20px;
+  }
+}
