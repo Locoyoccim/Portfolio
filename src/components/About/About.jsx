@@ -29,7 +29,7 @@ function About() {
             >
               <i className="bi bi-linkedin"></i>
             </a>
-            <a href="https://main--carlosahr.netlify.app/public/Hoja de Vida Carlos.pdf" target="_blank">
+            <a href="/public/Hoja_de_Vida_Carlos.pdf" target="_blank">
               <i className="bi bi-file-earmark-person-fill"></i>
             </a>
           </div>
