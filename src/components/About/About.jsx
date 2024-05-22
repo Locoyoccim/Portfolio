@@ -29,7 +29,7 @@ function About() {
             >
               <i className="bi bi-linkedin"></i>
             </a>
-            <a href="/public/Hoja_de_Vida_Carlos.pdf" target="_blank">
+            <a href="/Hoja_de_Vida_Carlos.pdf" target="_blank" download>
               <i className="bi bi-file-earmark-person-fill"></i>
             </a>
           </div>
