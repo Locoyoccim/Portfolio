@@ -25,7 +25,7 @@ import Aos from "aos";
 function App() {
   Aos.init();
   return (
-    <>
+    <div className="initial">
       <StarAnimation />
       <div className="main_container">
         <Navbar />
@@ -171,7 +171,7 @@ function App() {
         </main>
       </div>
       <Footer />
-    </>
+    </div>
   );
 }
 

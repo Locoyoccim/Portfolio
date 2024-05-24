@@ -10,9 +10,9 @@ function Navbar() {
     <>
       <header id="navbar_container">
         <nav className="navbar">
-          <div className="logo_container">
+          <a href="#sobre_mi" className="logo_container">
             <p>&lt; CAHR &#47;&gt;</p>
-          </div>
+          </a>
           <button onClick={() => onClick("show")} className="btn_hamburguer">
             <i className="bi bi-list"></i>
           </button>

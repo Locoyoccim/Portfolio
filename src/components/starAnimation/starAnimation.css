@@ -3,11 +3,10 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 3800px;
+    height: 100%;
     overflow: hidden;
     pointer-events: none;
   }
-  
   .star {
     position: absolute;
     width: 1px;
@@ -53,5 +52,16 @@
     --duration: calc(2s + var(--i) * 0.1s);
     --scale: calc(0.5 + var(--i) * 0.03);
     --pulse-duration: calc(1s + var(--i) * 0.05s);
+  }
+  @media screen and (max-width: 790) {
+    .stars_container {
+      height: 4500px;
+    }
+  }
+  
+  @media screen and (max-width: 425) {
+    .stars_container {
+      height: 6800px;
+    }
   }
   
