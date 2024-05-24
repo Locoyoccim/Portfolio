@@ -22,7 +22,7 @@ textarea {
   outline: none;
   background-color: var(--white);
   border-radius: 5px;
-  font-size: 22px;
+  font-size: 16px;
 }
 textarea:focus,
 input:focus {
@@ -56,14 +56,14 @@ input:focus {
   flex-direction: column;
 }
 input {
-  width: 200px;
+  width: 270px;
   height: 40px;
   padding-left: 10px;
   outline: none;
   border: none;
   border-radius: 5px;
   background-color: var(--white);
-  font-size: 22px;
+  font-size: 16px;
 }
 .carlos_mail {
   width: 100%;

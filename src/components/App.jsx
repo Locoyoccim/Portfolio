@@ -44,7 +44,7 @@ function App() {
               js={JS}
               reactImg={reactImg}
               description={
-                "Este proyecto es una aplicación web desarrollada con React que permite a los usuarios explorar banderas de diferentes países del mundo. Utiliza una API externa para obtener información actualizada sobre las banderas. La interfaz es intuitiva y amigable, permitiendo a los usuarios buscar y filtrar países de manera eficiente."
+                "Aplicación web desarrollada con React que permite a los usuarios explorar banderas de diferentes países del mundo. Utiliza una API externa para obtener información actualizada sobre las banderas. La interfaz es intuitiva y amigable, permitiendo a los usuarios buscar y filtrar países de manera eficiente."
               }
             />
             <ProjectArticle
@@ -57,7 +57,7 @@ function App() {
               reactImg={reactImg}
               direction={"reverse"}
               description={
-                "Este proyecto es una aplicación web que permite a los usuarios completar un formulario dividido en múltiples pasos. La aplicación de formulario multi-step proporciona una experiencia de usuario fluida al dividir el proceso en secciones, guiando al usuario paso a paso. Los datos ingresados se guardan en cada paso para asegurar la integridad de la información"
+                "Aplicación web que permite a los usuarios completar un formulario dividido en múltiples pasos. La aplicación de formulario multi-step proporciona una experiencia de usuario fluida al dividir el proceso en secciones, guiando al usuario paso a paso. Los datos ingresados se guardan en cada paso para asegurar la integridad de la información"
               }
             />
             <ProjectArticle
@@ -69,7 +69,7 @@ function App() {
               js={JS}
               reactImg={reactImg}
               description={
-                "Este proyecto es una aplicación web desarrollada con React que permite a los usuarios gestionar sus tareas diarias de manera eficiente. La ToDo App proporciona una interfaz amigable para crear, editar, marcar como completadas y eliminar tareas."
+                "Aplicación web desarrollada con React que permite a los usuarios gestionar sus tareas diarias de manera eficiente. La ToDo App proporciona una interfaz amigable para crear, editar, marcar como completadas y eliminar tareas."
               }
             />
             <h2 id="tecnologias" className="sub_tittles">
