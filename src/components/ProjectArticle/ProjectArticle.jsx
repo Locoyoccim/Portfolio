@@ -16,7 +16,8 @@ function ProjectArticle({
   Aos.init();
   return (
     <>
-      <article id="article_container" className={direction} data-aos="zoom-in" data-aos-duration="2000">
+    {/* direction, "reverse", especifica el sentido que tomara el contenido e la tarjeta */}
+      <article id="article_container" className={direction} data-aos="zoom-in" data-aos-duration="2000" data-aos-once="true">
         <div className="project_preview_img">
           <img src={imgProject} alt="project img preview" />
         </div>

@@ -6,7 +6,7 @@ import Experince from "/src/components/experience/Experience.jsx";
 import Footer from "/src/components/footer/Footer.jsx";
 import countriesImg from "/Countries.png";
 import html from "/Skills/html-5.png";
-import FormImg from "/multiStepForm.png";
+import GymApp from "/GymApp.png";
 import TodoAppImg from "/TodoApp.png";
 import css from "/Skills/css-3.png";
 import JS from "/Skills/js.png";
@@ -36,6 +36,18 @@ function App() {
               PROYECTOS
             </h2>
             <ProjectArticle
+              imgProject={GymApp}
+              githubLink={"https://github.com/Locoyoccim/gym_frontend"}
+              webLink={"https://gymapp.up.railway.app/"}
+              html={html}
+              css={css}
+              js={ts}
+              reactImg={reactImg}
+              description={
+                "Aplicación web desarrollada con React y TypeScript en el frontend, Python y Django en el backend, utilizando también JWT. Esta WebApp permite registrar los entrenamientos del usuario para posteriormente visualizarlos completos o de manera individual, pensado para uso en dispositivos moviles, para mejor experiencia se recomienda usar un dispositivo movil!."
+              }
+            />
+            <ProjectArticle
               imgProject={countriesImg}
               githubLink={"https://github.com/Locoyoccim/Countries_JSON"}
               webLink={"https://main--reliable-tanuki-77c097.netlify.app"}
@@ -43,21 +55,9 @@ function App() {
               css={css}
               js={JS}
               reactImg={reactImg}
-              description={
-                "Aplicación web desarrollada con React que permite a los usuarios explorar banderas de diferentes países del mundo. Utiliza una API externa para obtener información actualizada sobre las banderas. La interfaz es intuitiva y amigable, permitiendo a los usuarios buscar y filtrar países de manera eficiente."
-              }
-            />
-            <ProjectArticle
-              imgProject={FormImg}
-              githubLink={"https://github.com/Locoyoccim/multi_step_form"}
-              webLink={"https://monumental-rugelach-c3a266.netlify.app"}
-              html={html}
-              css={css}
-              js={JS}
-              reactImg={reactImg}
               direction={"reverse"}
               description={
-                "Aplicación web que permite a los usuarios completar un formulario dividido en múltiples pasos. La aplicación de formulario multi-step proporciona una experiencia de usuario fluida al dividir el proceso en secciones, guiando al usuario paso a paso. Los datos ingresados se guardan en cada paso para asegurar la integridad de la información"
+                "Aplicación web desarrollada con React que permite a los usuarios explorar banderas de diferentes países del mundo. Utiliza una API externa para obtener información actualizada sobre las banderas. La interfaz es intuitiva y amigable, permitiendo a los usuarios buscar y filtrar países de manera eficiente."
               }
             />
             <ProjectArticle
@@ -81,48 +81,56 @@ function App() {
                 alt="react logo"
                 data-aos="fade-right"
                 data-aos-duration="1500"
+                data-aos-once="true"
               />
               <img
                 src={css}
                 alt="css logo"
                 data-aos="fade-down"
                 data-aos-duration="1500"
+                data-aos-once="true"
               />
               <img
                 src={html}
                 alt="html logo"
                 data-aos="fade-down"
                 data-aos-duration="1500"
+                data-aos-once="true" 
               />
               <img
                 src={JS}
                 alt="JS logo"
                 data-aos="fade-left"
                 data-aos-duration="1500"
+                data-aos-once="true"
               />
               <img
                 src={python}
                 alt="Python logo"
                 data-aos="fade-right"
                 data-aos-duration="1500"
+                data-aos-once="true"
               />
               <img
                 src={django}
                 alt="django logo"
                 data-aos="fade-up"
                 data-aos-duration="1500"
+                data-aos-once="true"
               />
               <img
                 src={ts}
                 alt="ts logo"
                 data-aos="fade-up"
                 data-aos-duration="1500"
+                data-aos-once="true"
               />
               <img
                 src={sql}
                 alt="Sql logo"
                 data-aos="fade-left"
                 data-aos-duration="1500"
+                data-aos-once="true"
               />
             </div>
             <h2 className="sub_tittles">ME GUSTARIA APRENDER!!</h2>
@@ -132,6 +140,7 @@ function App() {
                 alt="angular logo"
                 data-aos="flip-up"
                 data-aos-duration="1500"
+                data-aos-once="true"
               />
               <img
                 src={docker}
@@ -144,6 +153,7 @@ function App() {
                 alt="websocket logo"
                 data-aos="flip-up"
                 data-aos-duration="1500"
+                data-aos-once="true"
               />
             </div>
             <h2 id="experiencia" className="sub_tittles">
