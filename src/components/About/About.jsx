@@ -1,4 +1,3 @@
-import React from "react";
 import "/src/components/About/about.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import { useScramble } from "use-scramble";
