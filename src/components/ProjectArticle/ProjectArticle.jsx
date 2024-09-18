@@ -37,7 +37,7 @@ function ProjectArticle({
             <a href={githubLink} target="_blank">
               <i className="bi bi-github"></i>
             </a>
-            <a href={webLink} target="_blak">
+            <a href={webLink} target="_blank">
               <i className="bi bi-link"></i>
             </a>
           </div>

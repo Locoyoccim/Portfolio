@@ -44,7 +44,7 @@ function App() {
               js={ts}
               reactImg={reactImg}
               description={
-                "Aplicación web desarrollada con React y TypeScript en el frontend, Python y Django en el backend, utilizando también JWT. Esta WebApp permite registrar los entrenamientos del usuario para posteriormente visualizarlos completos o de manera individual, pensado para uso en dispositivos moviles, para mejor experiencia se recomienda usar un dispositivo movil!."
+                "Aplicación web desarrollada con React y TypeScript en el frontend, Python y Django en el backend, utilizando también JWT. Esta WebApp permite registrar los entrenamientos del usuario para posteriormente visualizarlos completos o de manera individual, pensado para uso en dispositivos móviles, para mejor experiencia se recomienda usar un dispositivo Movil!."
               }
             />
             <ProjectArticle
@@ -73,7 +73,7 @@ function App() {
               }
             />
             <h2 id="tecnologias" className="sub_tittles">
-              TECNOLOGIAS
+              TECNOLOGÍAS
             </h2>
             <div className="skills_list">
               <img
@@ -113,7 +113,7 @@ function App() {
               />
               <img
                 src={django}
-                alt="django logo"
+                alt="Django logo"
                 data-aos="fade-up"
                 data-aos-duration="1500"
                 data-aos-once="true"
@@ -133,7 +133,7 @@ function App() {
                 data-aos-once="true"
               />
             </div>
-            <h2 className="sub_tittles">ME GUSTARIA APRENDER!!</h2>
+            <h2 className="sub_tittles">ME GUSTARÍA APRENDER!!</h2>
             <div className="To_learn">
               <img
                 src={Angular}

@@ -29,7 +29,7 @@ function Navbar() {
               <li>Proyectos</li>
             </a>
             <a onClick={() => onClick("")} href="#tecnologias">
-              <li>Tecnologias</li>
+              <li>Tecnologías</li>
             </a>
             <a onClick={() => onClick("")} href="#experiencia">
               <li>Experiencia</li>
