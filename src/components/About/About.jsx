@@ -1,22 +1,25 @@
 import "/src/components/About/about.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import { useScramble } from "use-scramble";
+import mentor from "/public/frontendmentor-svgrepo-com.svg";
+import { motion } from "framer-motion";
+import { useRef } from "react";
 
 function About() {
-
-  const {ref, replay} = useScramble({
-    text: 'carlos antonio hernandez robles',
+  const constraintsRef = useRef(null);
+  const { ref, replay } = useScramble({
+    text: "Carlos Antonio Hernandez robles",
     speed: 0.45,
     tick: 1,
     overflow: true,
-  })
+  });
   return (
     <>
       <section id="sobre_mi">
         <div className="performance">
           <h1 className="name" ref={ref} onMouseOver={replay}></h1>
           <p className="contact_details">
-            carlos_360@outlook.es | Tequila, Jal, Mexico
+            carlos_360@outlook.es | 374 107 7582 | Tequila, Jal, Mexico
           </p>
           <div className="social">
             <a href="https://github.com/Locoyoccim" target="_blank">
@@ -31,21 +34,44 @@ function About() {
             <a href="/Hoja_de_Vida_Carlos.pdf" target="_blank">
               <i className="bi bi-file-earmark-person-fill"></i>
             </a>
+            <a
+              href="https://www.frontendmentor.io/profile/Locoyoccim"
+              target="_blank"
+            >
+              <img
+                src={mentor}
+                alt="FrontEndMentor"
+                className="frontEndMentor"
+              />
+            </a>
           </div>
         </div>
-        <div className="img_performance">
-          <img className="male_computer" src="/developer_male.jpg" alt="developer" />
-        </div>
+        <motion.div ref={constraintsRef} className="img_performance">
+          <motion.img
+            animate={{ scale: [1, 1.2, 1], rotate: [0, 360] }}
+            transition={{
+              duration: 2,
+              ease: "easeInOut",
+              repeat: Infinity,
+              repeatDelay: 1,
+            }}
+            drag
+            dragConstraints={constraintsRef}
+            className="male_computer"
+            src="/developer_male.jpg"
+            alt="developer"
+          />
+        </motion.div>
       </section>
       <div className="description">
         <p>
-          Soy un desarrollador con experiencia en tecnologias front-end y
-          back-end, especializado en <span className="blue_text">ReactJS</span>
-          ,<span className="blue_text"> HTML5</span>, 
-          <span className="blue_text"> CSS</span> y 
+          Soy un desarrollador con experiencia en tecnologías front-end y
+          back-end, especializado en <span className="blue_text">ReactJS</span>,
+          <span className="blue_text"> HTML5</span>,
+          <span className="blue_text"> CSS</span> y
           <span className="blue_text"> JavaScript.</span> He trabajado en roles
-          de coordinacion y atencion al cliente, lo cual me ha permitido
-          desarrollar mis habilidades en solucion de problemas, gestion de
+          de coordinación y atención al cliente, lo cual me ha permitido
+          desarrollar mis habilidades en solución de problemas, gestión de
           equipos y comunicación efectiva.
         </p>
       </div>

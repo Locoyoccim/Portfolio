@@ -13,6 +13,7 @@
     "@formspree/react": "^2.5.1",
     "aos": "^3.0.0-beta.6",
     "bootstrap-icons": "^1.11.3",
+    "framer-motion": "^11.11.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "use-scramble": "^2.2.15"

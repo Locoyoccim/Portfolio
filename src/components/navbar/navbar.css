@@ -14,7 +14,7 @@
 #block_navbar {
   box-shadow: 0 10px 10px -5px rgba(0, 0, 255, 0.5);
 }
-.btn_hamburguer,
+.btn_hamburger,
 .x {
   display: none;
 }
@@ -28,28 +28,29 @@
   align-items: center;
   justify-content: space-between;
   position: relative;
+  gap: 20px;
+  right: 800px;
 }
 .logo_container {
-  -webkit-border-radius: 34px;
   border-radius: 34px;
   background: #0073cc;
-  -webkit-box-shadow: 5px 5px 15px #004a83, -5px -5px 15px #009cff;
-  box-shadow: 5px 5px 15px #004a83, -5px -5px 15px #009cff;
   color: var(--white);
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 140px;
+  min-width: 140px;
   height: 45px;
   font-style: italic;
   cursor: pointer;
   margin-top: 4px;
 }
 li {
-  color: var(--Tittles);
+  color: var(--white);
   cursor: pointer;
   list-style: none;
-  font-weight: 600;
+  font-weight: 500;
+  font-size: 24px;
+  letter-spacing: 2px;
   position: relative;
   display: flex;
   justify-content: center;
@@ -57,24 +58,24 @@ li {
   z-index: 3;
   padding: 5px 10px;
   overflow: hidden;
-  width: 130px;
+  width: 140px;
   height: 45px;
   gap: 5px;
   border-radius: 10px;
+  right: 200px;
 }
 .options li::after {
   content: "";
   background-color: var(--Tittles);
-  width: 130px;
+  width: 165px;
   height: 45px;
   position: absolute;
-  left: 135px;
+  left: 150px;
   transition: 0.5s ease all;
   z-index: -1;
   border-radius: 10px;
 }
-a:hover li::after,
-a:hover li {
+a:hover li::after{
   left: 0;
   transition: 0.5s ease all;
   color: var(--white);
@@ -87,26 +88,21 @@ a {
     padding: 0 50px;
   }
 }
-@media screen and (max-width: 717px) {
+@media screen and (max-width: 768px) {
   .options {
     position: fixed;
-    right: 0;
-    top: 0;
-    height: 0;
+    height: 350px;
+    left: 0;
+    top: 70px;
     flex-direction: column;
     width: 100%;
-    background: linear-gradient(to bottom right, var(--Tittles), black, black);
+    background: black;
     justify-content: center;
     gap: 35px;
-    box-shadow: 0px 10px 55px var(--Tittles);
+    box-shadow: 0px 30px 55px var(--Tittles);
     overflow: hidden;
-    transition: all 0.5s ease;
   }
-  .options.show {
-    height: 500px;
-    transition: all 0.5s ease;
-  }
-  .btn_hamburguer,
+  .btn_hamburger,
   .x_btn {
     display: initial;
     color: var(--Tittles);
@@ -114,6 +110,7 @@ a {
     border: none;
     font-size: 46px;
     cursor: pointer;
+    z-index: 3;
   }
   .x_btn {
     font-size: 58px;
@@ -126,9 +123,12 @@ a {
 
     height: max-content;
   }
+  li{
+    right: 0;
+  }
 }
-@media screen and (max-width: 490px){
-  #navbar_container{
+@media screen and (max-width: 490px) {
+  #navbar_container {
     padding: 20px 20px;
   }
 }

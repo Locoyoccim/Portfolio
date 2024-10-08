@@ -2,7 +2,7 @@ import About from "/src/components/About/About.jsx";
 import "./App.css";
 import Navbar from "/src/components/navbar/Navbar.jsx";
 import ProjectArticle from "./ProjectArticle/ProjectArticle.jsx";
-import Experince from "/src/components/experience/Experience.jsx";
+import Experience from "/src/components/experience/Experience.jsx";
 import Footer from "/src/components/footer/Footer.jsx";
 import countriesImg from "/Countries.png";
 import html from "/Skills/html-5.png";
@@ -12,7 +12,7 @@ import css from "/Skills/css-3.png";
 import JS from "/Skills/js.png";
 import reactImg from "/Skills/react-2.svg";
 import "bootstrap-icons/font/bootstrap-icons.css";
-import django from "/Skills/django.svg";
+import Django from "/Skills/django.svg";
 import sql from "/Skills/postgresql.svg";
 import python from "/Skills/python-5.svg";
 import ts from "/Skills/typescript-2.svg";
@@ -21,6 +21,7 @@ import docker from "/Skills/docker-4.svg";
 import WebSocketImg from "/Skills/websocket.svg";
 import StarAnimation from "/src/components/starAnimation/StarAnimation.jsx";
 import Aos from "aos";
+import ImgSkill from "./imgSkill/ImgSkill.jsx";
 
 function App() {
   Aos.init();
@@ -76,91 +77,70 @@ function App() {
               TECNOLOGÍAS
             </h2>
             <div className="skills_list">
-              <img
-                src={reactImg}
-                alt="react logo"
-                data-aos="fade-right"
-                data-aos-duration="1500"
-                data-aos-once="true"
+              <ImgSkill
+                img={reactImg}
+                nameSkill="React"
+                animationAos="fade-right"
               />
-              <img
-                src={css}
-                alt="css logo"
-                data-aos="fade-down"
-                data-aos-duration="1500"
-                data-aos-once="true"
+              <ImgSkill
+                img={css}
+                nameSkill="CSS"
+                animationAos="fade-down"
               />
-              <img
-                src={html}
-                alt="html logo"
-                data-aos="fade-down"
-                data-aos-duration="1500"
-                data-aos-once="true" 
+              <ImgSkill
+                img={html}
+                nameSkill="HTML"
+                animationAos="fade-down"
               />
-              <img
-                src={JS}
-                alt="JS logo"
-                data-aos="fade-left"
-                data-aos-duration="1500"
-                data-aos-once="true"
+              <ImgSkill
+                img={JS}
+                nameSkill="JavaScript"
+                animationAos="fade-left"
               />
-              <img
-                src={python}
-                alt="Python logo"
-                data-aos="fade-right"
-                data-aos-duration="1500"
-                data-aos-once="true"
+              <ImgSkill
+                img={python}
+                nameSkill="Python"
+                animationAos="fade-right"
               />
-              <img
-                src={django}
-                alt="Django logo"
-                data-aos="fade-up"
-                data-aos-duration="1500"
-                data-aos-once="true"
+              <ImgSkill
+                img={Django}
+                nameSkill="Django"
+                animationAos="fade-up"
               />
-              <img
-                src={ts}
-                alt="ts logo"
-                data-aos="fade-up"
-                data-aos-duration="1500"
-                data-aos-once="true"
+              <ImgSkill
+                img={ts}
+                nameSkill="TypeScript"
+                animationAos="fade-up"
               />
-              <img
-                src={sql}
-                alt="Sql logo"
-                data-aos="fade-left"
-                data-aos-duration="1500"
-                data-aos-once="true"
+              <ImgSkill
+                img={sql}
+                nameSkill="SQL"
+                animationAos="fade-left"
               />
             </div>
             <h2 className="sub_tittles">ME GUSTARÍA APRENDER!!</h2>
             <div className="To_learn">
-              <img
-                src={Angular}
-                alt="angular logo"
-                data-aos="flip-up"
-                data-aos-duration="1500"
-                data-aos-once="true"
+              <ImgSkill
+                img={Angular}
+                nameSkill="Angular"
+                animationAos="flip-up"
               />
-              <img
-                src={docker}
-                alt="docker logo"
-                data-aos="flip-up"
-                data-aos-duration="1500"
+              <ImgSkill
+                img={docker}
+                nameSkill="Docker"
+                animationAos="flip-up"
               />
-              <img
-                src={WebSocketImg}
-                alt="websocket logo"
-                data-aos="flip-up"
-                data-aos-duration="1500"
-                data-aos-once="true"
+              <ImgSkill 
+                img={WebSocketImg}
+                nameSkill="WebSocket"
+                animationAos="flip-up"
               />
             </div>
             <h2 id="experiencia" className="sub_tittles">
               EXPERIENCIA
             </h2>
             <div className="experience_container">
-              <Experince job="COORDINADOR DE BANQUETES Y RESTAURANTE – HACIENDA EL CENTENARIO">
+              <Experience job="COORDINADOR DE BANQUETES Y RESTAURANTE – HACIENDA EL CENTENARIO">
                 Funciones principales de lograr el éxito de los eventos de
                 acuerdo a las solicitudes, dentro del cual involucramos la
                 organización y manejo desde 1 hasta 20 meseros, teniendo una
@@ -168,14 +148,14 @@ function App() {
                 esta temporada también asumí responsabilidades de coordinador de
                 restaurante en Antigua Casona, Villa Tequila y Cafetería de
                 centro cultural.
-              </Experince>
-              <Experince job="RECEPCIONISTA – HOTEL SOLAR DE LAS ÁNIMAS">
+              </Experience>
+              <Experience job="RECEPCIONISTA – HOTEL SOLAR DE LAS ÁNIMAS">
                 Funciones principales de dar check in y check out, con el
                 sistema OPERA FULL SERVICE, generación de reservaciones, además
                 de apoyar a diferentes áreas del hotel como grupos, con la
                 creación de PM (Posting Master), además funciones como auditor
                 nocturno al cubrir vacaciones y descansos del mismo.
-              </Experince>
+              </Experience>
             </div>
           </div>
         </main>

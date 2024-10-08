@@ -33,12 +33,7 @@
   align-items: center;
   justify-content: space-around;
   column-gap: 110px;
-  row-gap: 50px;
-}
-.skills_list img,
-.To_learn img {
-  width: 120px;
-  transition: 0.5s all ease;
+  row-gap: 80px;
 }
 .experience_container {
   background-color: var(--bg_article);

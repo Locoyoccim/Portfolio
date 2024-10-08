@@ -1,0 +1,39 @@
+#skill_img_container {
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+.skill_img {
+  width: 120px;
+  aspect-ratio: 5/6;
+  object-fit: contain;
+  z-index: 3;
+  cursor: pointer;
+  position: relative;
+}
+.skill_name {
+  position: absolute;
+  display: inline-block;
+  padding: 10px 20px;
+  background: var(--bg_article);
+  color: var(--white);
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 8px;
+  transform: scale(0);
+  transition: 0.3s all ease-in-out;
+}
+#skill_img_container:hover .skill_name {
+  transform: scale(1) translateY(-110px);
+  transition: 0.3s all ease-in-out;
+}
+.skill_name::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 10px;
+  border-style: solid;
+  border-color: var(--bg_article) transparent transparent transparent; /* Color de la flecha y bordes transparentes */
+}

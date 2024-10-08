@@ -1,11 +1,28 @@
 import React, { useState } from "react";
 import "/src/components/navbar/navbar.css";
-function Navbar() {
-  const [optionState, SetOptionsState] = useState("");
+import { motion } from "framer-motion";
 
-  const onClick = (newStatus) => {
-    SetOptionsState(newStatus);
+function Navbar() {
+  const hamburgerBtn = "bi bi-list";
+  const closeBtn = "bi bi-x";
+  const [btn, setBtn] = useState(hamburgerBtn);
+  const [isOpen, setIsOpen] = useState(false);
+  const variantNav = {
+    visible: { x: 0 },
+    hidden: { x: 800 },
   };
+  const variantLi = {
+    visible: { x: 0, display: 1 },
+    hidden: { x: 200, display: 0 },
+  };
+
+  const onClick = () => {
+    if (window.innerWidth <= 769) {
+      setBtn(btn === closeBtn ? hamburgerBtn : closeBtn);
+      setIsOpen(isOpen ? false : true);
+    }
+  };
+
   return (
     <>
       <header id="navbar_container">
@@ -13,28 +30,52 @@ function Navbar() {
           <a href="#sobre_mi" className="logo_container">
             <p>&lt; CAHR &#47;&gt;</p>
           </a>
-          <button onClick={() => onClick("show")} className="btn_hamburguer">
-            <i className="bi bi-list"></i>
+          <button onClick={() => onClick()} className="btn_hamburger">
+            <i className={btn}></i>
           </button>
-          <ul className={`options ${optionState}`}>
-            <li className="x">
-              <button onClick={() => onClick("")} className="x_btn">
-                <i className="bi bi-x"></i>
-              </button>
-            </li>
-            <a onClick={() => onClick("")} href="#sobre_mi">
-              <li>Sobre mi</li>
+          <motion.ul
+            className={`options`}
+            variants={variantNav}
+            animate={isOpen ? "visible" : "hidden"}
+            transition={{ ease: "easeInOut", duration: 0.8 }}
+          >
+            <a onClick={() => onClick()} href="#sobre_mi">
+              <motion.li
+                variants={variantLi}
+                animate={isOpen ? "visible" : "hidden"}
+                transition={{ ease: "easeInOut", duration: 0.5, delay: 0.4 }}
+              >
+                Sobre mi
+              </motion.li>
             </a>
-            <a onClick={() => onClick("")} href="#proyectos">
-              <li>Proyectos</li>
+            <a onClick={() => onClick()} href="#proyectos">
+              <motion.li
+                variants={variantLi}
+                animate={isOpen ? "visible" : "hidden"}
+                transition={{ ease: "easeInOut", duration: 0.5, delay: 0.5 }}
+              >
+                Proyectos
+              </motion.li>
             </a>
-            <a onClick={() => onClick("")} href="#tecnologias">
-              <li>Tecnologías</li>
+            <a onClick={() => onClick()} href="#tecnologias">
+              <motion.li
+                variants={variantLi}
+                animate={isOpen ? "visible" : "hidden"}
+                transition={{ ease: "easeInOut", duration: 0.5, delay: 0.6 }}
+              >
+                Tecnologías
+              </motion.li>
             </a>
-            <a onClick={() => onClick("")} href="#experiencia">
-              <li>Experiencia</li>
+            <a onClick={() => onClick()} href="#experiencia">
+              <motion.li
+                variants={variantLi}
+                animate={isOpen ? "visible" : "hidden"}
+                transition={{ ease: "easeInOut", duration: 0.5, delay: 0.7 }}
+              >
+                Experiencia
+              </motion.li>
             </a>
-          </ul>
+          </motion.ul>
         </nav>
       </header>
     </>
