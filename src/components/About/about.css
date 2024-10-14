@@ -20,7 +20,10 @@
 .img_performance img {
   width: 80%;
   border-radius: 50%;
-  cursor:move;
+  cursor: grab;
+}
+.img_performance img:active{
+  cursor: grabbing;
 }
 .name {
   color: var(--Tittles);

@@ -1,17 +1,21 @@
+import { easeIn, easeInOut, motion } from "framer-motion";
 import "./imgSkill.css";
-function ImgSkill({ nameSkill, img, animationAos }) {
+
+function ImgSkill({ nameSkill, img, drag, dragConstraints }) {
   return (
-    <div id="skill_img_container">
+    <motion.div
+      id="skill_img_container"
+      drag={drag} // Aplicar drag
+      dragConstraints={dragConstraints} // Aplicar los límites de arrastre
+      initial={{scale: 0}}
+      whileInView={{scale: 1}}
+      transition={{ type: "spring" }}
+      viewport={{once: true}}
+      whileHover={{scale: 1.1}}
+    >
+      <img className="skill_img" src={img} alt={nameSkill} />
       <div className="skill_name">{nameSkill}</div>
-      <img
-        className="skill_img"
-        src={img}
-        alt={nameSkill}
-        data-aos={animationAos}
-        data-aos-duration="1500"
-        data-aos-once="true"
-      />
-    </div>
+    </motion.div>
   );
 }
 

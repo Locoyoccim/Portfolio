@@ -2,8 +2,8 @@
 
 #article_container {
   background-color: var(--bg_article);
-  width: 100%;
   height: max-content;
+  max-width: 1240px;
   border: 5px solid var(--Tittles);
   border-radius: 10px;
   display: flex;

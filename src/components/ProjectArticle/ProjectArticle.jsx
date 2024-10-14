@@ -16,15 +16,16 @@ function ProjectArticle({
   Aos.init();
   return (
     <>
-    {/* direction, "reverse", especifica el sentido que tomara el contenido e la tarjeta */}
-      <article id="article_container" className={direction} data-aos="zoom-in" data-aos-duration="2000" data-aos-once="true">
+      {/* direction, "reverse", especifica el sentido que tomara el contenido e la tarjeta */}
+      <article
+        id="article_container"
+        className={direction}
+      >
         <div className="project_preview_img">
           <img src={imgProject} alt="project img preview" />
         </div>
         <div className="project_details">
-          <p className="project_description">
-            {description}
-          </p>
+          <p className="project_description">{description}</p>
           <div className="skills_links_container">
             <div className="skills">
               <img src={html} alt="html_img" />

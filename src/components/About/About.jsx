@@ -1,7 +1,7 @@
 import "/src/components/About/about.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import { useScramble } from "use-scramble";
-import mentor from "/public/frontendmentor-svgrepo-com.svg";
+import mentor from "/frontendmentor-svgrepo-com.svg";
 import { motion } from "framer-motion";
 import { useRef } from "react";
 
@@ -48,13 +48,13 @@ function About() {
         </div>
         <motion.div ref={constraintsRef} className="img_performance">
           <motion.img
-            animate={{ scale: [1, 1.2, 1], rotate: [0, 360] }}
+            initial={{ scale: 0.8, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }} 
             transition={{
-              duration: 2,
-              ease: "easeInOut",
-              repeat: Infinity,
-              repeatDelay: 1,
+              duration: 0.6,
+              ease: "easeInOut" 
             }}
+            whileHover={{ scale: 1.05 }}
             drag
             dragConstraints={constraintsRef}
             className="male_computer"

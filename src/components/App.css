@@ -1,4 +1,4 @@
-.initial{
+.initial {
   width: 100%;
   height: 100%;
   position: relative;
@@ -27,13 +27,15 @@
 }
 .skills_list,
 .To_learn {
-  width: 100%;max-width: 1030px;
+  width: 100%;
+  max-width: 1030px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
   column-gap: 110px;
   row-gap: 80px;
+  height: max-content;
 }
 .experience_container {
   background-color: var(--bg_article);

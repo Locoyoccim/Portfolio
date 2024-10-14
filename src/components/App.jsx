@@ -22,8 +22,13 @@ import WebSocketImg from "/Skills/websocket.svg";
 import StarAnimation from "/src/components/starAnimation/StarAnimation.jsx";
 import Aos from "aos";
 import ImgSkill from "./imgSkill/ImgSkill.jsx";
+import { motion } from "framer-motion";
+import { useRef } from "react";
 
 function App() {
+  const constraintsRef = useRef(null);
+  const constraintsRef2 = useRef(null);
+
   Aos.init();
   return (
     <div className="initial">
@@ -76,66 +81,77 @@ function App() {
             <h2 id="tecnologias" className="sub_tittles">
               TECNOLOGÍAS
             </h2>
-            <div className="skills_list">
+            <motion.div className="skills_list" ref={constraintsRef}>
               <ImgSkill
                 img={reactImg}
                 nameSkill="React"
-                animationAos="fade-right"
+                drag // Habilitar drag
+                dragConstraints={constraintsRef} // Pasar restricciones
               />
               <ImgSkill
                 img={css}
                 nameSkill="CSS"
-                animationAos="fade-down"
+                drag // Habilitar drag
+                dragConstraints={constraintsRef} // Pasar restricciones
               />
               <ImgSkill
                 img={html}
                 nameSkill="HTML"
-                animationAos="fade-down"
+                drag // Habilitar drag
+                dragConstraints={constraintsRef} // Pasar restricciones
               />
               <ImgSkill
                 img={JS}
                 nameSkill="JavaScript"
-                animationAos="fade-left"
+                drag
+                dragConstraints={constraintsRef} // Pasar restricciones
               />
               <ImgSkill
                 img={python}
                 nameSkill="Python"
-                animationAos="fade-right"
+                drag // Habilitar drag
+                dragConstraints={constraintsRef} // Pasar restricciones
               />
               <ImgSkill
                 img={Django}
                 nameSkill="Django"
-                animationAos="fade-up"
+                drag // Habilitar drag
+                dragConstraints={constraintsRef} // Pasar restricciones
               />
               <ImgSkill
                 img={ts}
                 nameSkill="TypeScript"
-                animationAos="fade-up"
+                drag // Habilitar drag
+                dragConstraints={constraintsRef} // Pasar restricciones
               />
               <ImgSkill
                 img={sql}
                 nameSkill="SQL"
-                animationAos="fade-left"
+                drag // Habilitar drag
+                dragConstraints={constraintsRef} // Pasar restricciones
               />
-            </div>
+            </motion.div>
             <h2 className="sub_tittles">ME GUSTARÍA APRENDER!!</h2>
-            <div className="To_learn">
+            <motion.div className="To_learn" ref={constraintsRef2}>
               <ImgSkill
                 img={Angular}
                 nameSkill="Angular"
-                animationAos="flip-up"
+                drag // Habilitar drag
+                dragConstraints={constraintsRef2} // Pasar restricciones
               />
               <ImgSkill
                 img={docker}
                 nameSkill="Docker"
-                animationAos="flip-up"
+                drag // Habilitar drag
+                dragConstraints={constraintsRef2} // Pasar restricciones
               />
-              <ImgSkill 
+              <ImgSkill
                 img={WebSocketImg}
                 nameSkill="WebSocket"
-                animationAos="flip-up"
+                drag // Habilitar drag
+                dragConstraints={constraintsRef2} // Pasar restricciones
               />
-            </div>
+            </motion.div>
             <h2 id="experiencia" className="sub_tittles">
               EXPERIENCIA
             </h2>
