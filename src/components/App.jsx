@@ -4,10 +4,10 @@ import Navbar from "/src/components/navbar/Navbar.jsx";
 import ProjectArticle from "./ProjectArticle/ProjectArticle.jsx";
 import Experience from "/src/components/experience/Experience.jsx";
 import Footer from "/src/components/footer/Footer.jsx";
-import countriesImg from "/Countries.png";
+import QuizApp from "/QuizApp.png";
 import html from "/Skills/html-5.png";
 import GymApp from "/GymApp.png";
-import TodoAppImg from "/TodoApp.png";
+import Users from "/Users.png";
 import css from "/Skills/css-3.png";
 import JS from "/Skills/js.png";
 import reactImg from "/Skills/react-2.svg";
@@ -45,8 +45,8 @@ function App() {
                             imgProject={GymApp}
                             githubLink={"https://github.com/Locoyoccim/gym_frontend"}
                             webLink={"https://gymapp.up.railway.app/"}
-                            html={html}
-                            css={css}
+                            html={Django}
+                            css={python}
                             js={ts}
                             reactImg={reactImg}
                             description={
@@ -54,28 +54,32 @@ function App() {
                             }
                         />
                         <ProjectArticle
-                            imgProject={countriesImg}
-                            githubLink={"https://github.com/Locoyoccim/Countries_JSON"}
-                            webLink={"https://main--reliable-tanuki-77c097.netlify.app"}
-                            html={html}
-                            css={css}
-                            js={JS}
+                            imgProject={QuizApp}
+                            githubLink={"https://github.com/Locoyoccim/QuizForm_FE"}
+                            webLink={"https://quizformfe-production.up.railway.app/"}
+                            html={Django}
+                            css={python}
+                            js={sql}
                             reactImg={reactImg}
                             direction={"reverse"}
                             description={
-                                "Aplicación web desarrollada con React que permite a los usuarios explorar banderas de diferentes países del mundo. Utiliza una API externa para obtener información actualizada sobre las banderas. La interfaz es intuitiva y amigable, permitiendo a los usuarios buscar y filtrar países de manera eficiente."
+                                "Desarrollé una aplicación con backend propio y base de datos para gestionar formularios. Los usuarios regulares pueden responder y enviar formularios, además de consultar las respuestas recibidas. Los administradores tienen control completo para crear, editar y administrar formularios, respuestas y usuarios, garantizando un manejo eficiente y seguro de la información."
                             }
                         />
                         <ProjectArticle
-                            imgProject={TodoAppImg}
-                            githubLink={"https://github.com/Locoyoccim/Todo-App"}
-                            webLink={"https://silver-stroopwafel-e395c8.netlify.app"}
-                            html={html}
-                            css={css}
-                            js={JS}
+                            imgProject={Users}
+                            githubLink={
+                                "https://github.com/Locoyoccim/FE_Transition_Task4"
+                            }
+                            webLink={
+                                "https://fetransitiontask4-production.up.railway.app/"
+                            }
+                            html={python}
+                            css={Django}
+                            js={sql}
                             reactImg={reactImg}
                             description={
-                                "Aplicación web desarrollada con React que permite a los usuarios gestionar sus tareas diarias de manera eficiente. La ToDo App proporciona una interfaz amigable para crear, editar, marcar como completadas y eliminar tareas."
+                                "Desarrollé una aplicación para gestionar usuarios y sus roles dentro de una empresa, permitiendo visualizar su estado y actualizarlo entre activo y no activo. Toda la información se administra mediante una base de datos con un backend en Django y Python, garantizando seguridad y eficiencia. Para iniciar sesión, por ejemplo, se puede usar el correo elena.cruz@example.com."
                             }
                         />
                         <h2 id="tecnologias" className="sub_tittles">
